@@ -1,0 +1,31 @@
+server:
+  port: 8078
+
+spring:
+  application:
+    name: consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+
+#访问不同服务可以使用不同的算法
+#provider:  #先写服务提供者的名称
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+ribbon:
+  eager-load:
+    enabled: true  #ribbon只有自己 不能做服务发现 借助eureka拉取服务列表
+  eureka:
+    enabled: true  #
+  http:
+    client:
+      enabled: false  #restTemplate 发请求   支持连接池 效率更好
+  okhttp:
+    enabled: false  #轻量级的请求
+

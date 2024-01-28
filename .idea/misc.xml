@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/eureka-client1/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/eureka-client2/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/eureka-server2/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/eureka-server3/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/rest-template/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon/ribbon-prov1/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon/robbon-prov2/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon/consumer1/pom.xml" />
+        <option value="$PROJECT_DIR$/openfeign/pom.xml" />
+        <option value="$PROJECT_DIR$/openfeign/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/openfeign/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix/hystrix-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix/rent-car-service/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix/Fish/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

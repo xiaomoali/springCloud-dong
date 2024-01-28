@@ -1,0 +1,60 @@
+server:
+  port: 8761
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+spring:
+#  freemarker:
+#    prefer-file-system-access: true
+  application:
+    name: eureka-server
+#eureka:
+#  server:
+#    eviction-interval-timer-in-ms: 10000  #服务端间隔多少毫秒做定期删除操作
+#    renewal-percent-threshold: 0.85       #续约百分比
+#  instance:
+##    instance-id: localhost:eureka-server:8761
+#    hostname: localhost
+#    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+#    prefer-ip-address: true #以ip的形式显示具体的服务信息
+##    lease-expiration-duration-in-seconds:
+#    lease-renewal-interval-in-seconds:  5  #服务实例的续约的时间间隔
+
+
+
+eureka:
+  instance:
+    #    instance-id: localhost:eureka-server:8761
+    hostname: peer1
+    instance-id: ${spring.application.name}:${server.port}  #${eureka.instance.hostname}:
+    prefer-ip-address: true #以ip的形式显示具体的服务信息
+    #    lease-expiration-duration-in-seconds:
+    lease-renewal-interval-in-seconds: 5  #服务实例的续约的时间间隔
+  client:
+    service-url:
+      defaultZone:   http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer3:8763/eureka
+
+
+#eureka:
+#  #  server:
+#  #    eviction-interval-timer-in-ms: 10000  #服务端间隔多少毫秒做定期删除操作
+#  #    renewal-percent-threshold: 0.85       #续约百分比
+#  instance:
+#    #    instance-id: localhost:eureka-server:8761
+#    hostname: peer1
+#    instance-id: ${spring.application.name}:${server.port}
+#    prefer-ip-address: true #以ip的形式显示具体的服务信息
+#    #    lease-expiration-duration-in-seconds:
+#    lease-renewal-interval-in-seconds:  5  #服务实例的续约的时间间隔
+#  client:
+#    service-url:
+#      defaultZone:   http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer3:8763/eureka
+
+
+
+

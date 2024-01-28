@@ -1,0 +1,27 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: user-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+
+
+#feign:
+#  httpclient:
+#    connection-timeout: 3000
+ribbon:
+  ReadTimeout: 3000
+  ConnectTime: 3000  #连接服务的超时时间
+logging:
+  level:
+    com.qins.feign.UserOrderFeign: debug  #配置feign打印日志
+

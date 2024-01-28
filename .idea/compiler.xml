@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="openfeign" />
+        <module name="hystrix" />
+        <module name="ribbon-prov1" />
+        <module name="eureka" />
+        <module name="rest-template" />
+        <module name="ribbon" />
+        <module name="hystrix-consumer" />
+        <module name="eureka-client2" />
+        <module name="eureka-server2" />
+        <module name="rent-car-service" />
+        <module name="eureka-client1" />
+        <module name="user-service" />
+        <module name="eureka-server" />
+        <module name="eureka-server3" />
+        <module name="robbon-prov2" />
+        <module name="Fish" />
+        <module name="order-service" />
+        <module name="consumer1" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Fish" options="-parameters" />
+      <module name="consumer1" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="eureka-client1" options="-parameters" />
+      <module name="eureka-client2" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="eureka-server2" options="-parameters" />
+      <module name="eureka-server3" options="-parameters" />
+      <module name="hystrix-consumer" options="-parameters" />
+      <module name="openfeign" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="rent-car-service" options="-parameters" />
+      <module name="rest-template" options="-parameters" />
+      <module name="ribbon" options="-parameters" />
+      <module name="ribbon-prov1" options="-parameters" />
+      <module name="robbon-prov2" options="-parameters" />
+      <module name="springCloud-dong" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+    </option>
+  </component>
+</project>
