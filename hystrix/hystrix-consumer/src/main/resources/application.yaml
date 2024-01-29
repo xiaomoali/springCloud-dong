@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: hystrix-consumer
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      rate: 10   #为了使用速率限制采样器 选择每秒间隔接受的trace量
+      probability: 1   #配置采样率
 eureka:
   instance:
     instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
