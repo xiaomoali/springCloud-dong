@@ -16,3 +16,8 @@ eureka:
   instance:
     instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
     hostname: localhost
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  #暴露所有监控端点

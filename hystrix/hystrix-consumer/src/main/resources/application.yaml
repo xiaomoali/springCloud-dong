@@ -29,6 +29,7 @@ feign:
 ribbon:
   ReadTimeOut: 5000
   ConnectTimeOut: 3000
+
 #hystrix:
 #  command:
 #    default:
