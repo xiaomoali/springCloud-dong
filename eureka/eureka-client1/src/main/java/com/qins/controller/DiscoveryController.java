@@ -29,6 +29,7 @@ public class DiscoveryController {
         System.out.println(host+":"+port);
 
         return instances.toString();
+
     }
 
 
