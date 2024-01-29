@@ -13,9 +13,9 @@ import javax.annotation.Resource;
 public class CustomerController {
 
 
-//    @Autowired   //报错 容器中有多个对象
+    @Autowired   //报错 容器中有多个对象
 //    @Resource  //
-    @Qualifier("customerRentFeign")  //指定某一个对象
+//    @Qualifier("customerRentFeign")  //指定某一个对象
     private CustomerRentFeign customerRentFeign;
 
 
