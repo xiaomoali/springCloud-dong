@@ -23,6 +23,7 @@
         <module name="eureka-server3" />
         <module name="robbon-prov2" />
         <module name="Fish" />
+        <module name="admin-server" />
         <module name="order-service" />
         <module name="consumer1" />
       </profile>
@@ -31,6 +32,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Fish" options="-parameters" />
+      <module name="admin-server" options="-parameters" />
       <module name="consumer1" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="eureka-client1" options="-parameters" />

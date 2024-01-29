@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/hystrix/hystrix-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix/rent-car-service/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix/Fish/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-server/pom.xml" />
       </list>
     </option>
   </component>
