@@ -1,6 +1,7 @@
 package com.qins.feign.hystrix;
 
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.qins.feign.CustomerRentFeign;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,7 @@ public class CustomerRentFeignHystrix implements CustomerRentFeign {
      * @return
      */
     @Override
+//    @HystrixCommand
     public String rent() {
         return "bei xuan";
     }
