@@ -21,6 +21,7 @@
         <module name="user-service" />
         <module name="eureka-server" />
         <module name="eureka-server3" />
+        <module name="redis1" />
         <module name="robbon-prov2" />
         <module name="Fish" />
         <module name="admin-server" />
@@ -43,6 +44,7 @@
       <module name="hystrix-consumer" options="-parameters" />
       <module name="openfeign" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="redis1" options="-parameters" />
       <module name="rent-car-service" options="-parameters" />
       <module name="rest-template" options="-parameters" />
       <module name="ribbon" options="-parameters" />
