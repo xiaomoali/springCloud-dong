@@ -1,6 +1,9 @@
 package com.qins;
 
 import com.alibaba.fastjson2.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Transaction;
 
@@ -22,6 +25,7 @@ public class TestTx {
         try {
             multi.set("user1",s);
             multi.set("user2",s);
+
 //            int i=1/0;
             multi.exec();
 
@@ -33,6 +37,11 @@ public class TestTx {
             System.out.println(jedis.get("user2"));
             jedis.close();
         }
+
+
+
+
+
 
     }
 }
