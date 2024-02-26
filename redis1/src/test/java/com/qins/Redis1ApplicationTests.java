@@ -8,8 +8,6 @@ import org.springframework.data.redis.core.RedisTemplate;
 @SpringBootTest
 class Redis1ApplicationTests {
 
-
-
     @Autowired
     private RedisTemplate redisTemplate;
 

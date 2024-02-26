@@ -1,6 +1,7 @@
 package com.qins;
 
 import com.alibaba.fastjson2.JSONObject;
+import com.alibaba.fastjson2.util.GuavaSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -37,6 +38,8 @@ public class TestTx {
             System.out.println(jedis.get("user2"));
             jedis.close();
         }
+
+
 
 
 

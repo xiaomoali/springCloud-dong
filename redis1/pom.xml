@@ -50,6 +50,13 @@
             <version>6.3.0.RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>33.0.0-android</version>
+        </dependency>
+
 
 
         <dependency>
