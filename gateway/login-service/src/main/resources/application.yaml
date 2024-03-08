@@ -1,0 +1,6 @@
+server:
+  port: 7995
+
+spring:
+  application:
+    name: login-service

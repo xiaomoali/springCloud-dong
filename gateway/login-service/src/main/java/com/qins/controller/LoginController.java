@@ -14,6 +14,6 @@ public class LoginController {
         System.out.println(pwd);
 
         String token = UUID.randomUUID().toString();
-        return token;
+        return token+"d";
     }
 }

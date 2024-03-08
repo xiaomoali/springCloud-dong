@@ -1,0 +1,17 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      x-forwarded:
+        enabled: true
+      mvc:
+        routes:
+          - id: login-service-route
+            uri: http://localhost:7995
+            predicates:
+              - Path=/doLogin
+#????
