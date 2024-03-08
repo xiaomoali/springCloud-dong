@@ -5,7 +5,7 @@
       <list>
         <ServerConfiguration>
           <option name="label" value="1" />
-          <option name="password" value="123456" />
+          <option name="password" value="" />
           <option name="sercurityInfo">
             <SercurityInfo>
               <option name="sshUsePassword" value="true" />
