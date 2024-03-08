@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="openfeign" />
+        <module name="login-service" />
         <module name="hystrix" />
         <module name="ribbon-prov1" />
         <module name="eureka" />
@@ -23,6 +24,7 @@
         <module name="eureka-server3" />
         <module name="redis1" />
         <module name="robbon-prov2" />
+        <module name="gateway-service" />
         <module name="Fish" />
         <module name="admin-server" />
         <module name="order-service" />
@@ -43,7 +45,9 @@
       <module name="eureka-server2" options="-parameters" />
       <module name="eureka-server3" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
       <module name="hystrix-consumer" options="-parameters" />
+      <module name="login-service" options="-parameters" />
       <module name="openfeign" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="redis1" options="-parameters" />

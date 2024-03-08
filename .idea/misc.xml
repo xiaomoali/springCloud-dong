@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/admin-server/pom.xml" />
         <option value="$PROJECT_DIR$/redis1/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/login-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/gateway-service/pom.xml" />
       </list>
     </option>
   </component>
